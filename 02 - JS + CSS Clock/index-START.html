@@ -65,35 +65,10 @@
       transform: rotate(90deg);
       transition: all 0.5s
       transition-timing-function: cubic-bezier(1, 2.99, 0.58, 1);
-
     }
 
   </style>
   <script>
-    setInterval(tick, 1000)
-    function tick() {
-      const date = new Date();
-      const seconds = date.getSeconds();
-      secTick(date.getSeconds())
-      minuteTick(date.getMinutes())
-      hourTick(date.getHours())
-    }
-    function secTick(sec) {
-      const secondsDegrees = sec * 6;
-      const handSec = document.querySelector('.hand.second-hand');
-      handSec.style.transform = `rotate(${secondsDegrees}deg)`;
-    }
-    function minuteTick(min) {
-      const minDegrees = min * 6;
-      const handMin = document.querySelector('.hand.min-hand');
-      handMin.style.transform = `rotate(${minDegrees}deg)`;
-    }
-    function hourTick(hour) {
-      const hourDegrees = hour * 30;
-      const handHour = document.querySelector('.hand.hour-hand');
-      handHour.style.transform = `rotate(${hourDegrees}deg)`;
-    }
-
   </script>
 </body>
 </html>
